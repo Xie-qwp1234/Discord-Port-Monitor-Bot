@@ -7,6 +7,7 @@
 可自訂檢查間隔、超時時間與重試次數
 支援 .env 載入 Discord Token 與頻道 ID
 可透過 systemd 設為開機自動啟動
+每10分鐘監控一次
 
 # 需求
 1.Python 3.10+ 
@@ -97,4 +98,10 @@ sudo systemctl daemon-reload
 sudo systemctl enable dcportbot
 sudo systemctl start dcportbot
 sudo systemctl status dcportbot
+```
+
+# 7.指令
+呼叫機器人
+```
+!status
 ```
